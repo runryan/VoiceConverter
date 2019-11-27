@@ -1,0 +1,1 @@
+../../../../../VoiceConverter2/Classes/amrFileCodec.h

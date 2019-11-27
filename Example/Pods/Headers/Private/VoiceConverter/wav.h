@@ -1,1 +1,0 @@
-../../../../../VoiceConverter/Classes/wav.h

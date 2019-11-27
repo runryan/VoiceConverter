@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'VoiceConverter'
-  s.version          = '0.0.1'
+  s.name             = 'VoiceConverter2'
+  s.version          = '0.0.2'
   s.summary          = 'amr和wav音频格式相互转换'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'VoiceConverter/Classes/**/*'
+  s.source_files = 'VoiceConverter2/Classes/**/*'
   
   # s.resource_bundles = {
   #   'VoiceConverter' => ['VoiceConverter/Assets/*.png']
@@ -41,5 +41,5 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.library = 'c++'
-  s.vendored_library = 'VoiceConverter/libs/libopencore-amrnb.a', 'VoiceConverter/libs/libopencore-amrwb.a'
+  s.vendored_library = 'VoiceConverter2/libs/libopencore-amrnb.a', 'VoiceConverter2/libs/libopencore-amrwb.a'
 end

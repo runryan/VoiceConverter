@@ -1,16 +1,16 @@
 PODS:
-  - VoiceConverter (0.0.1)
+  - VoiceConverter2 (0.0.2)
 
 DEPENDENCIES:
-  - VoiceConverter (from `../`)
+  - VoiceConverter2 (from `../`)
 
 EXTERNAL SOURCES:
-  VoiceConverter:
+  VoiceConverter2:
     :path: "../"
 
 SPEC CHECKSUMS:
-  VoiceConverter: b16fcc0093a01487c4e0c736dd5fc58195d95cf1
+  VoiceConverter2: d8f4c98a8e499b24f5c1fcf970acbd97a05a5d74
 
-PODFILE CHECKSUM: 13a83471b4ac8e4520f09b187ceca51b6a72279b
+PODFILE CHECKSUM: 90a70a6c1a4b860ccf363e751f1ed28670518acf
 
 COCOAPODS: 1.8.3
