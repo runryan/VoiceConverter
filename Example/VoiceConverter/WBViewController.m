@@ -7,9 +7,9 @@
 //
 
 #import "WBViewController.h"
+#import <EMVoiceConverter.h>
 
 @interface WBViewController ()
-
 @end
 
 @implementation WBViewController
@@ -17,13 +17,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"voice" ofType:@"wav"];
+    NSString *homeDir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).firstObject;
+    NSString *targetPath = [homeDir stringByAppendingPathComponent:@"hhh.amr"];
+    NSLog(@"amr音频保存目录：%@", targetPath);
+    int result = [EMVoiceConverter wavToAmr:path amrSavePath:targetPath];
+    if(result == 0) {
+        NSLog(@"转换成功……");
+        return;
+    }
+    NSLog(@"转换失败……");
 }
+
+///Users/ryan/workspace/Ryan's Pods/VoiceConverter/Example/Pods/Headers/Public/VoiceConverter/wav.h:24:1: Unknown type name 'class'; did you mean 'Class'?
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
