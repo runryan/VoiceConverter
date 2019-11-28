@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "WAConverter"
-  spec.version      = "0.0.3"
-  spec.summary      = "音频转换"
+  spec.version      = "0.0.4"
+  spec.summary      = "WAV、AMR音频格式相互转换"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  音频转换，WAV -> AMR; AMR -> WAV;
+  该库从腾讯云IM的项目抽取出来的，用于WAV、AMR音频格式转换
                    DESC
 
   spec.homepage     = "https://github.com/runryan/VoiceConverter"

@@ -17,12 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"voice" ofType:@"wav"];
+    NSString *wavPath = [[NSBundle mainBundle] pathForResource:@"voice" ofType:@"wav"];
     NSString *homeDir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).firstObject;
     NSString *targetPath = [homeDir stringByAppendingPathComponent:@"hhh.amr"];
     NSLog(@"amr音频保存目录：%@", targetPath);
-    int result = [WAConverter wavToAmr:path amrSavePath:targetPath];
-    if(result == 0) {
+    BOOL success = [WAConverter convertWAV:wavPath toAMR:targetPath];
+    if(success) {
         NSLog(@"转换成功……");
         return;
     }

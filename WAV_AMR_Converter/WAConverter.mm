@@ -26,21 +26,18 @@
     return isAMRFile(_filePath);
 }
 
-+ (int)amrToWav:(NSString*)_amrPath wavSavePath:(NSString*)_savePath{
++ (BOOL)convertAMR:(NSString *)amrPath toWAV:(NSString *)wavPath {
+    if (EM_DecodeAMRFileToWAVEFile([amrPath cStringUsingEncoding:NSASCIIStringEncoding], [wavPath cStringUsingEncoding:NSASCIIStringEncoding]))
+        return YES; // success
 
-    if (EM_DecodeAMRFileToWAVEFile([_amrPath cStringUsingEncoding:NSASCIIStringEncoding], [_savePath cStringUsingEncoding:NSASCIIStringEncoding]))
-        return 0; // success
-
-    return 1;   // failed
+    return NO;   // failed
 }
 
-+ (int)wavToAmr:(NSString*)_wavPath amrSavePath:(NSString*)_savePath{
++ (BOOL)convertWAV:(NSString *)wavPath toAMR:(NSString *)amrPath {
+    if (EM_EncodeWAVEFileToAMRFile([wavPath cStringUsingEncoding:NSASCIIStringEncoding], [amrPath cStringUsingEncoding:NSASCIIStringEncoding], 1, 16))
+        return YES;   // success
 
-    if (EM_EncodeWAVEFileToAMRFile([_wavPath cStringUsingEncoding:NSASCIIStringEncoding], [_savePath cStringUsingEncoding:NSASCIIStringEncoding], 1, 16))
-        return 0;   // success
-
-    return 1;   // failed
+    return NO;   // failed
 }
-
 
 @end
