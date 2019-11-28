@@ -4,27 +4,33 @@
 ### 怎样安装？
 
 * 在Objective-C项目中使用，在Podfile中加入：
-
-  `pod 'WAConverter'`
-  
+  ```ruby
+  pod 'WAConverter'
+  ```
  * 在Swift项目中使用:
    1. 在Podfile中加入：
   
-      ```
+      ```ruby
       use_modular_headers!
       pod 'WAConverter'
       ```
     2. 在`Bridging-Header.h`文件中加入：
     
-       ```
-       #import <WAV_ARM_Converter/WAConverter.h>`
+       ```Objective-C
+       #import <WAConverter/WAConverter.h>
        ``` 
        
 ### 怎样使用？
+* 在OC中使用
+  ``` Objective-C
+  #import <WAConverter.h>
+  [WAConverter convertWAV:wavPath toAMR:amrPath]
+  ```
 
-```
-if WAConverter.wav(toAmr: url.path, amrSavePath: armPath) != 0 {
-  // 格式转换失败……
-  return
-}
-```
+* 在Swift中使用
+  ```Swift
+  if !WAConverter.convertWAV(url.path, toAMR: armPath) {
+      // 格式转换失败
+      return
+  }
+  ```
