@@ -8,7 +8,7 @@
   `pod 'WAConverter'`
   
  * 在Swift项目中使用:
-   1. 在Podfile中计入：
+   1. 在Podfile中加入：
   
       ```
       use_modular_headers!
