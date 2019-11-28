@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "WAConverter"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "音频转换"
 
   # This description is used to generate tags and improve search results.
