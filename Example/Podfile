@@ -1,7 +1,7 @@
 platform :ios, '11.0'
 
 target 'VoiceConverter_Example' do
-  pod 'VoiceConverter2', :path => '../'
+  pod 'WAConverter', :path => '../'
 
   target 'VoiceConverter_Tests' do
     inherit! :search_paths

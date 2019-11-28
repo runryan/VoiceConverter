@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## VoiceConverter2
+## WAConverter
 
 Copyright (c) 2019 ryan <mob_developer@163.com>
 

@@ -1,0 +1,28 @@
+{
+  "name": "WAConverter",
+  "version": "0.0.2",
+  "summary": "音频转换",
+  "description": "音频转换，WAV -> AMR; AMR -> WAV;",
+  "homepage": "https://github.com/runryan/VoiceConverter",
+  "license": "MIT",
+  "authors": {
+    "ryan": "mob_developer@163.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "git@github.com:runryan/VoiceConverter.git",
+    "tag": "0.0.2"
+  },
+  "source_files": [
+    "WAV_AMR_Converter",
+    "WAV_AMR_Converter/**/*.{h,mm}"
+  ],
+  "public_header_files": "WAV_AMR_Converter/**/*.h",
+  "libraries": "c++",
+  "vendored_libraries": [
+    "WAV_AMR_Converter/libopencore-amrnb.a",
+    "WAV_AMR_Converter/libopencore-amrwb.a"
+  ]
+}

@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "EMVoiceConverter.h"
+#import "WAConverter.h"
 #import "wav.h"
 #import "interf_dec.h"
 #import "dec_if.h"
 #import "interf_enc.h"
 #import "amrFileCodec.h"
 
-@implementation EMVoiceConverter
+@implementation WAConverter
 
 
 + (int)isMP3File:(NSString *)filePath{

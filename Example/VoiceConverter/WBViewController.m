@@ -7,7 +7,7 @@
 //
 
 #import "WBViewController.h"
-#import <EMVoiceConverter.h>
+#import <WAConverter.h>
 
 @interface WBViewController ()
 @end
@@ -21,7 +21,7 @@
     NSString *homeDir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).firstObject;
     NSString *targetPath = [homeDir stringByAppendingPathComponent:@"hhh.amr"];
     NSLog(@"amr音频保存目录：%@", targetPath);
-    int result = [EMVoiceConverter wavToAmr:path amrSavePath:targetPath];
+    int result = [WAConverter wavToAmr:path amrSavePath:targetPath];
     if(result == 0) {
         NSLog(@"转换成功……");
         return;

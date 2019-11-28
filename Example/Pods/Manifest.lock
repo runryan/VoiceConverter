@@ -1,16 +1,16 @@
 PODS:
-  - VoiceConverter2 (0.0.2)
+  - WAConverter (0.0.2)
 
 DEPENDENCIES:
-  - VoiceConverter2 (from `../`)
+  - WAConverter (from `../`)
 
 EXTERNAL SOURCES:
-  VoiceConverter2:
+  WAConverter:
     :path: "../"
 
 SPEC CHECKSUMS:
-  VoiceConverter2: d8f4c98a8e499b24f5c1fcf970acbd97a05a5d74
+  WAConverter: acc3399bc51431f64c0b2d0f68fb511f0e875569
 
-PODFILE CHECKSUM: 90a70a6c1a4b860ccf363e751f1ed28670518acf
+PODFILE CHECKSUM: 5d9acfa5e5de803b956746926d7f24efb466923e
 
 COCOAPODS: 1.8.3
